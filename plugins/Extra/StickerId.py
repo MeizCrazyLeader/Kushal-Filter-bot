@@ -24,7 +24,7 @@ I can Provide all Kind of Sticker Options Here """
 
 JOIN_BUTTON = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('↗ Join Here ↗', url='https://t.me/TG_UPDATES1')
+        InlineKeyboardButton('↗ Join Here ↗', url='https://t.me/Students_Helpers')
         ]]
     )
 
@@ -60,7 +60,7 @@ async def getstickerasfile(bot, message):
         await tx.edit("Downloaded")
         await tx.edit("Uploading...")
         start = time.time()
-        await message.reply_document(file_path,caption="©NASRANI_UPDATE")
+        await message.reply_document(file_path,caption="©Students_Helpers")
         await tx.delete()   
         os.remove(file_path)
     except Exception as error:
