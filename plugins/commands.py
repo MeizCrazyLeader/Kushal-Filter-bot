@@ -26,7 +26,7 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
-                    InlineKeyboardButton('🔸 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🔹', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('• ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ •', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
                     InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url=CHNL_LNK),
                     InlineKeyboardButton('ɢʀᴏᴜᴘ', url=GRP_LNK)
@@ -44,7 +44,7 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-                    InlineKeyboardButton('🔸 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🔹', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('• ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ •', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
                     InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url=CHNL_LNK),
                     InlineKeyboardButton('ɢʀᴏᴜᴘ', url=GRP_LNK)
@@ -52,13 +52,13 @@ async def start(client, message):
                     InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
                     InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
                 ],[
-                    InlineKeyboardButton('💳 𝐆𝐄𝐓 𝐀𝐃𝐙 𝐅𝐑𝐄𝐄 𝐅𝐈𝐋𝐄 💳', callback_data='kushal') 
+                    InlineKeyboardButton('💸 ɢᴇᴛ ᴘʀᴇᴍɪᴜᴍ 💸', callback_data='kushal') 
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        m=await message.reply_text("👀")
+        m=await message.reply_text("🕊️")
         await asyncio.sleep(1)
         await m.delete()
-        m=await message.reply_text("⚡")
+        m=await message.reply_text("🌝")
         await asyncio.sleep(1)
         await m.delete()
         m=await message.reply_sticker("CAACAgIAAxkBAAEBX4RlH6KWlmN63-NAKmqJrDfX_qB1DgACVAADQbVWDGq3-McIjQH6HgQ") 
@@ -93,15 +93,15 @@ async def start(client, message):
                 btn.append([InlineKeyboardButton("↻ Tʀʏ Aɢᴀɪɴ", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
         await client.send_photo(
             chat_id=message.from_user.id,
-            photo="https://telegra.ph/file/20b4aaaddb8aba646e53c.jpg",
-            caption="You are not in our channel given below so you don't get the movie file...\n\nIf you want the movie file, click on the '🍿ᴊᴏɪɴ ᴏᴜʀ ʙᴀᴄᴋ-ᴜᴘ ᴄʜᴀɴɴᴇʟ🍿' button below and join our back-up channel, then click on the '🔄 Try Again' button below...\n\nThen you will get the movie files...",
+            photo="https://graph.org/file/fe28d153bd9d6b4dc631a.jpg",
+            caption="You are not in our channel given below so you don't get the file...\n\nIf you want the file, click on the '🍿ᴊᴏɪɴ ᴏᴜʀ ʙᴀᴄᴋ-ᴜᴘ ᴄʜᴀɴɴᴇʟ🍿' button below and join our back-up channel, then click on the '🔄 Try Again' button below...\n\nThen you will get the files...",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode=enums.ParseMode.MARKDOWN
             )
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-                    InlineKeyboardButton('🔸 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🔹', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('• ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ •', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
                     InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url=CHNL_LNK),
                     InlineKeyboardButton('ɢʀᴏᴜᴘ', url=GRP_LNK)
@@ -109,7 +109,7 @@ async def start(client, message):
                     InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
                     InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
                   ],[
-                    InlineKeyboardButton('💳 𝐆𝐄𝐓 𝐀𝐃𝐙 𝐅𝐑𝐄𝐄 𝐅𝐈𝐋𝐄 💳', callback_data='kushal') 
+                    InlineKeyboardButton('💸 ɢᴇᴛ ᴘʀᴇᴍɪᴜᴍ 💸', callback_data='kushal') 
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)      
         await message.reply_photo(
@@ -246,10 +246,10 @@ async def start(client, message):
         is_valid = await check_token(client, userid, token)
         if is_valid == True:
             await message.reply_text(
-                text=f"<b>Hey {message.from_user.mention}, You are successfully verified !\nNow you have unlimited access for all movies till today midnight.</b>",
+                text=f"<b>Hey {message.from_user.mention}, You are successfully verified !\nNow you have unlimited access for all files till today.</b>",
                 protect_content=True
             )
-            await verify_user(client, userid, token)
+      await verify_user(client, userid, token)
         else:
             return await message.reply_text(
                 text="<b>Invalid link or Expired link !</b>",
@@ -271,7 +271,7 @@ async def start(client, message):
                     [
                         InlineKeyboardButton('📂  ᴅᴏᴡɴʟᴏᴀᴅ ɴᴏᴡ  📂', url=g)
                     ], [
-                        InlineKeyboardButton('💠  ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ  💠', url=await get_tutorial(chat_id))
+                        InlineKeyboardButton('⚡  ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ  ⚡', url=await get_tutorial(chat_id))
                     ]
                 ]
             )
@@ -292,7 +292,7 @@ async def start(client, message):
                     [
                         InlineKeyboardButton('📂  ᴅᴏᴡɴʟᴏᴀᴅ ɴᴏᴡ  📂', url=g)
                     ], [
-                        InlineKeyboardButton('💠  ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ  💠', url=await get_tutorial(chat_id))
+                        InlineKeyboardButton('⚡  ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ  ⚡', url=await get_tutorial(chat_id))
                     ]
                 ]
             )
@@ -369,7 +369,7 @@ async def start(client, message):
                         [
                             InlineKeyboardButton('📂  ᴅᴏᴡɴʟᴏᴀᴅ ɴᴏᴡ  📂', url=g)
                         ], [
-                            InlineKeyboardButton('💠  ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ  💠', url=await get_tutorial(chat_id))
+                            InlineKeyboardButton('⚡  ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ  ⚡', url=await get_tutorial(chat_id))
                         ]
                     ]
                 )
