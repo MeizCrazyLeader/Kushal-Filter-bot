@@ -249,7 +249,7 @@ async def start(client, message):
                 text=f"<b>Hey {message.from_user.mention}, You are successfully verified !\nNow you have unlimited access for all files till today.</b>",
                 protect_content=True
             )
-      await verify_user(client, userid, token)
+            await verify_user(client, userid, token)
         else:
             return await message.reply_text(
                 text="<b>Invalid link or Expired link !</b>",
